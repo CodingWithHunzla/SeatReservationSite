@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+#stage {
+  width: 400px;
+  margin: auto;
+  line-height: 150px;
+  border: 2px solid #ccc;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+#seating {
+  overflow: hidden;
+  width: 730px;
+  margin: auto;
+  padding-left: 10px;
+}
+
+#seating section {
+  float: left;
+}
+
+#seating section div {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  line-height: 26px;
+  border: 2px solid #ccc;
+  text-align: center;
+  font-size: 12px;
+}
+
+.a:hover,
+.s:hover {
+  cursor: pointer;
+}
+
+.a:hover {
+  /* background: #f9e300; */
+  background-image: url(./svg/chair-h.svg);
+}
+
+.s {
+  /* background: #f62bc8; */
+  background-image: url(./svg/chair-s.svg);
+}
+
+.r {
+  /* background: #ff0000; */
+  background-image: url(./svg/chair-r.svg);
+}
+
+#seating .label {
+  border: 2px solid #fff;
+  text-transform: uppercase;
+}
+
+#left,
+#right {
+  width: 160px;
+}
+
+#middle {
+  width: 360px;
+  margin: 0 20px;
+}
+
+#reserve {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px;
+  font-weight: bold;
+  background: cadetblue;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/****************** Reservation form *****************/
+
+#resform {
+  display: none; /* initially invisible*/
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40vw;
+  padding: 20px;
+  /* background: #ececec; */
+  background: cadetblue;
+  border: 2px solid #ccc;
+}
+
+#resform h2,
+p {
+  text-align: center;
+}
+
+#confirmres {
+  text-align: center;
+}
+
+input,
+label {
+  display: block;
+  width: 20vw;
+  margin: auto;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+#confirmbtn {
+  display: inline-block;
+  padding: 6px 14px 6px;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #0077c8;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.1s;
+}
+#confirmbtn:hover {
+  background-color: #075d96;
+}
